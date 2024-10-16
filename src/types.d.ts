@@ -5,7 +5,7 @@ import {
   PermissionResolvable,
   SlashCommandBuilder,
   SlashCommandSubcommandBuilder,
-} from "discord.js";
+} from 'discord.js';
 
 export interface BotEvent {
   name: string;
@@ -38,7 +38,7 @@ declare global {
   }
 }
 
-declare module "discord.js" {
+declare module 'discord.js' {
   export interface Client {
     slashCommands: Collection<string, SlashCommand>;
   }

@@ -1,25 +1,29 @@
 # Présentation
 
+Cette template permet à quiconque de prendre une structure propre et organisée pour commencer le développement d'un nouveau bot.
+
 ## Comment utiliser cette template
 
 1. Cloner ce repository ou appuyez sur "Use this template"
 2. Installez les dépendances avec `npm install`
 3. Créez un fichier `.env` à la racine de votre projet avec les informations suivantes:
+
 ```.env
 #.env
 TOKEN=//le_token_de_votre_bot_discord//
 CLIENT_ID=//uuid_de_votre_client_discord//
 ```
-4. Lancez le build du bot avec `npm build`
+
+4. Lancez le build du bot avec `npm run build` / `npx tsc` --watch pour le lancer en mode démon
 5. Lancez le bot avec `npm run start`
 
 ### Précisions
 
-Lors du build, il est executé :
-    * npm run format
-    * npm run lint
-    * npm run doc
-    * npm run test
+Lors du build avec la commande `npm run build`, il est executé :
+_ npm run format
+_ npm run lint
+_ npm run doc
+_ npm run test
 
 Il est possibile d'utiliser ces commandes indépendemments si vous le souhaitez.
 

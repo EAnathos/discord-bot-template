@@ -12,14 +12,14 @@ const client = new Client({
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.GuildMessageReactions,
     GatewayIntentBits.MessageContent,
-  ]
+  ],
 });
 
 client.slashCommands = new Collection<string, SlashCommand>();
 
-const handlersDir = join(__dirname, "./handlers");
+const handlersDir = join(__dirname, './handlers');
 
-readdirSync(handlersDir).forEach(handler => {
+readdirSync(handlersDir).forEach((handler) => {
   require(`${handlersDir}/${handler}`)(client);
 });
 
