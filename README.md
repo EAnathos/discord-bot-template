@@ -20,12 +20,11 @@ CLIENT_ID=//uuid_de_votre_client_discord//
 ### Précisions
 
 Lors du build avec la commande `npm run build`, il est executé :
-_ npm run format
-_ npm run lint
-_ npm run doc
-_ npm run test
+* npm run format
+* npm run lint
+* npm run test
 
-Il est possibile d'utiliser ces commandes indépendemments si vous le souhaitez.
+Il vous est aussi possible de générer une documentation côté developpeur avec `npm run doc`
 
 ## Technologies utilisées
 
