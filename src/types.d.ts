@@ -1,11 +1,4 @@
-import {
-  Collection,
-  CommandInteraction,
-  Message,
-  PermissionResolvable,
-  SlashCommandBuilder,
-  SlashCommandSubcommandBuilder,
-} from 'discord.js';
+import { Collection, CommandInteraction, SlashCommandBuilder } from 'discord.js';
 
 export interface BotEvent {
   name: string;
@@ -15,7 +8,7 @@ export interface BotEvent {
 
 export interface SlashCommand {
   name: string;
-  data: SlashCommandBuilder | any;
+  data: SlashCommandBuilder;
   execute: (interaction: CommandInteraction) => Promise<void>;
 }
 
