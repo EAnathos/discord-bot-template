@@ -9,7 +9,7 @@
     "test": "npx jest",
     "lint": "eslint ./src",
     "format": "prettier . --write",
-    "doc": "npx typedoc --entryPointStrategy expand ./src && npm run format"
+    "doc": "npx typedoc --entryPointStrategy expand ./src"
   },
   "repository": {
     "type": "git",
