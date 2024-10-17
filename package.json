@@ -5,11 +5,11 @@
   "main": "index.tsc",
   "scripts": {
     "start": "node dist/index.js",
-    "build": "npm run format && npm run lint && npx tsc",
+    "build": "npm run format && npm run lint && npx tsc && npm run test",
     "test": "npx jest",
     "lint": "eslint ./src",
     "format": "prettier . --write",
-    "doc": "npx typedoc --entryPointStrategy expand ./src"
+    "doc": "npx typedoc --entryPointStrategy expand ./src && npm run format"
   },
   "repository": {
     "type": "git",
