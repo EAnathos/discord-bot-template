@@ -27,6 +27,29 @@ Lors du build avec la commande `npm run build`, il est executé :
 
 Il vous est aussi possible de générer une documentation côté developpeur avec `npm run doc`
 
+## Structure
+Voici la structure du projet :
+
+```
+dist/ --> Fichiers typescripts compilés
+src/ --> Fichiers sources
+    handlers/
+    slashCommands/
+    events/
+    index.ts
+    types.d.ts
+test/ --> Tests unitaires des fichiers sources
+docs/ --> Documentation auto-généré
+.env --> Variables d'environnements
+.gitignore
+.prettierignore
+.prettierrc
+eslint.config.mjs --> Fichiers de configurations EsLint
+package.json
+README.md
+tsconfig.json
+```
+
 ## Technologies utilisées
 
 - [Discord.js](https://discord.js.org/#/) - La librairie pour interagir avec l'API Discord
@@ -34,6 +57,9 @@ Il vous est aussi possible de générer une documentation côté developpeur ave
 - [TypeScript](https://www.typescriptlang.org/) - Le langage de programmation utilisé
 - [dotenv](https://www.npmjs.com/package/dotenv) - Pour gérer les variables d'environnement
 - [typeDoc](https://typedoc.org/) - Pour générer la documentation du code
+- [Prettier](https://prettier.io/) - Pour formater proprement l'ensemble du code
+- [EsLint](https://eslint.org/) - Pour analyser et assurer la qualité du code
+- [Jest](https://jestjs.io/) - Pour pratiquer des tests unitaires
 
 ## Contribution
 
