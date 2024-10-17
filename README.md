@@ -56,7 +56,7 @@ README.md --> Fichier de présentation
 
 - [Discord.js](https://discord.js.org/#/) - La librairie pour interagir avec l'API Discord
 - [Node.js](https://nodejs.org/en/) - L'environnement d'exécution JavaScript
-- [TypeScript](https://www.typescriptlang.org/) - Le langage de programmation utilisé
+- [TypeScript](https://www.typescriptlang.org/) - Une surcouche de javascript, langage de programmation utilisé
 - [dotenv](https://www.npmjs.com/package/dotenv) - Pour gérer les variables d'environnement
 - [typeDoc](https://typedoc.org/) - Pour générer la documentation du code
 - [Prettier](https://prettier.io/) - Pour formater proprement l'ensemble du code
