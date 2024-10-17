@@ -10,6 +10,7 @@ module.exports = async (client: Client) => {
   readdirSync(slashCommandsDir).forEach((file) => {
     if (!file.endsWith('.js')) return;
 
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const command: SlashCommand = require(`${slashCommandsDir}/${file}`).command;
 
     client.slashCommands.set(command.name, command);

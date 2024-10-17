@@ -9,11 +9,14 @@ module.exports = (client: Client) => {
   readdirSync(eventsDir).forEach((file) => {
     if (!file.endsWith('.js')) return;
 
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const event: BotEvent = require(`${eventsDir}/${file}`).default;
 
-    event.once
-      ? client.once(event.name, (...args) => event.execute(...args))
-      : client.on(event.name, (...args) => event.execute(...args));
+    if (event.once) {
+      client.once(event.name, (...args) => event.execute(...args));
+    } else {
+      client.on(event.name, (...args) => event.execute(...args));
+    }
 
     console.log(`🌠 Successfully loaded event ${event.name}`);
   });

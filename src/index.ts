@@ -20,6 +20,7 @@ client.slashCommands = new Collection<string, SlashCommand>();
 const handlersDir = join(__dirname, './handlers');
 
 readdirSync(handlersDir).forEach((handler) => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   require(`${handlersDir}/${handler}`)(client);
 });
 
