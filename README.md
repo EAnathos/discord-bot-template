@@ -33,21 +33,22 @@ Voici la structure du projet :
 ```
 dist/ --> Fichiers typescripts compilés
 src/ --> Fichiers sources
-    handlers/
-    slashCommands/
-    events/
-    index.ts
-    types.d.ts
+    handlers/ --> Gestionnaires d'événements
+    slashCommands/ --> Commandes slash
+    events/ --> Événements Discord
+    utils/ --> Fonctions utilitaires
+    index.ts --> Fichier principal (launcher)
+    types.d.ts --> Définitions de types typescript
 test/ --> Tests unitaires des fichiers sources
 docs/ --> Documentation auto-généré
 .env --> Variables d'environnements
-.gitignore
-.prettierignore
-.prettierrc
+.gitignore --> Fichiers ignorés par Git
+.prettierignore --> Fichiers ignorés par Prettier
+.prettierrc --> Fichiers de configurations Prettier
 eslint.config.mjs --> Fichiers de configurations EsLint
-package.json
-README.md
-tsconfig.json
+package.json --> Fichier de configurations npm
+tsconfig.json --> Fichier de configurations TypeScript
+README.md --> Fichier de présentation
 ```
 
 ## Technologies utilisées
