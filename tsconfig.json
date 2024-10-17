@@ -104,5 +104,9 @@
   },
   "exclude": [
     "node_modules"
-]
+  ],
+  "types": [
+    "node",
+    "jest"
+  ]
 }
