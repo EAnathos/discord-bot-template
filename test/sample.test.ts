@@ -15,25 +15,25 @@ describe('sumFunction', () => {
   // Test basique d'addition de deux nombres positifs
   test('addition de deux nombres positifs', () => {
     const result = sumFunction(2, 3);
-    expect(result).toBe(5); // Vérifie que 2 + 3 = 5
+    expect(result).toBe(5);
   });
 
   // Test pour addition de deux nombres négatifs
   test('addition de deux nombres négatifs', () => {
     const result = sumFunction(-2, -3);
-    expect(result).toBe(-5); // Vérifie que -2 + -3 = -5
+    expect(result).toBe(-5);
   });
 
   // Test pour addition d'un nombre positif et d'un nombre négatif
   test("addition d'un nombre positif et d'un nombre négatif", () => {
     const result = sumFunction(5, -3);
-    expect(result).toBe(2); // Vérifie que 5 + (-3) = 2
+    expect(result).toBe(2);
   });
 
   // Test pour addition d'un nombre avec zéro
   test("addition d'un nombre et zéro", () => {
     const result = sumFunction(4, 0);
-    expect(result).toBe(4); // Vérifie que 4 + 0 = 4
+    expect(result).toBe(4);
   });
 
   // Test pour addition de deux zéros

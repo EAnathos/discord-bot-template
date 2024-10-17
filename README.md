@@ -28,6 +28,7 @@ Lors du build avec la commande `npm run build`, il est executé :
 Il vous est aussi possible de générer une documentation côté developpeur avec `npm run doc`
 
 ## Structure
+
 Voici la structure du projet :
 
 ```
